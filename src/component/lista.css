@@ -1,0 +1,48 @@
+.card-header{
+    border-bottom: 0px;
+}
+
+.card{
+    border: 0px;
+}
+
+.card-body{
+    border-left: 1px dashed rgba(0, 0, 0, 0.2);
+    margin: 0 0 0 4%;
+    
+}
+
+.input-add{
+    transition: 0.1s linear;
+    transform: translateX(-1.5rem);
+    width: 0px;
+    z-index: -999;
+    visibility: hidden;
+}
+
+.input-add-visible{
+    transform: translateX(1rem);
+    animation: animacaoBolada 0.8s;
+    visibility: visible;
+    animation-fill-mode: forwards;
+}
+
+.btn-add-kr{
+    transform: translateX(1rem);
+    visibility: hidden;
+}
+
+.btn-add-kr{
+    transform: translateX(1rem);
+    visibility: hidden;
+}
+
+@keyframes animacaoBolada  {
+    0%   { 
+        width: 0px;
+     }
+    
+     100% { 
+        width: 200px;
+     }
+ }
